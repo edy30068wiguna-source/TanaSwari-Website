@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tana Swari - Balinese Gamelan</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 35px 25px;
+  width: 95%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* LOGO */
+.logo {
+  width: 140px;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 25px rgba(212,175,55,0.6);
+  animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  color: #d4af37;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* BUTTONS – CLASSY STYLE */
+.buttons a {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons a:hover {
+  transform: translateY(-2px) scale(1.03);
+  border-color: #d4af37;
+  box-shadow: 0 0 18px rgba(212,175,55,0.5);
+  color: #d4af37;
+}
+
+/* MINI GALLERY */
+.gallery {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.gallery div {
+  height: 60px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* FLOATING WA */
+.floating-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(37,211,102,0.9);
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(37,211,102,0.6);
+  animation: pulse 2s infinite;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+  70% { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="logo.png" class="logo">
+
+  <h1>TANA SWARI</h1>
+  <div class="tagline">Balinese Gamelan</div>
+
+  <div class="desc">
+    Produksi Gamelan Bali <br>
+    Service • Tukar Tambah
+  </div>
+
+  <div class="buttons">
+    <a href="https://wa.me/6285790905313" target="_blank">💬 WhatsApp</a>
+    <a href="https://www.instagram.com/tanaswari_" target="_blank">📸 Instagram</a>
+    <a href="https://www.tiktok.com/@tanaswari_" target="_blank">🎵 TikTok</a>
+    <a href="https://www.google.com/maps?q=-8.632969,115.254660" target="_blank">
+      📍 Denpasar Timur
+    </a>
+  </div>
+
+  <div class="gallery">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <footer>
+    © 2026 Tana Swari • Handmade with Harmony 🎶
+  </footer>
+</div>
+
+<a href="https://wa.me/6285790905313" class="floating-wa">💬</a>
+
+</body>
+</html>
